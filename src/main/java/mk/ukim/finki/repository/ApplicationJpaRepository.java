@@ -6,5 +6,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 /**
  * Basic CRUD Repository interface
  */
-public interface ApplicationRepository extends JpaRepository<Application, Long> {
+public interface ApplicationJpaRepository extends JpaRepository<Application, Long> {
 }

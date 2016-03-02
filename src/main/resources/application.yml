@@ -2,7 +2,7 @@ spring:
   application:
     name: Jersey REST Api
   # Profiles configuration
-  profiles: [dev]
+  profiles: [dev, mongo]
   profiles.active: dev
   # Data source configuration
   datasource:

@@ -1,9 +1,8 @@
-package mk.ukim.finki.service.jpa;
+package mk.ukim.finki.service.mongo;
 
 import mk.ukim.finki.model.Application;
-import mk.ukim.finki.repository.ApplicationJpaRepository;
+import mk.ukim.finki.repository.ApplicationMongoRepository;
 import mk.ukim.finki.service.ApplicationService;
-import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.Profile;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -14,15 +13,14 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 /**
- * Application service JPA implementation
+ * Application service MongoDB implementation
  */
-@Primary
-@Profile("dev")
+@Profile("mongo")
 @Service
-public class ApplicationServiceJpa implements ApplicationService {
+public class ApplicationServiceMongo implements ApplicationService {
 
   @Inject
-  ApplicationJpaRepository repository;
+  ApplicationMongoRepository repository;
 
   @Override
   public Application save(Application application) {
