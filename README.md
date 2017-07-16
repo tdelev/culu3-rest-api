@@ -1,4 +1,4 @@
-# Code Up Level Up sample application
+# Code Up Level Up 3 demo application
 
 ## Requirements
 
@@ -18,3 +18,7 @@
 2. Run `./gradlew bootRun`
 
 3. Hack!
+
+## Presentation
+
+https://docs.google.com/presentation/d/1WsroXqiSWjXr0eOoHRZPX64_jRPFCukCkjf9ds3Vyz4/pub?start=false&loop=false&delayms=3000
